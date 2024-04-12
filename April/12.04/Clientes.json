@@ -1,0 +1,32 @@
+[
+    {
+      "codigo_cliente": "CL001",
+      "nome": "Joao",
+      "contratos_locacao": [
+        {
+          "codigo_contrato": "CT001",
+          "data_retirada": "2024-03-27",
+          "data_devolucao": "2024-04-10",
+          "veiculo_placa": "ABC1234"
+        },
+        {
+          "codigo_contrato": "CT002",
+          "data_retirada": "2024-04-01",
+          "data_devolucao": "2024-04-15",
+          "veiculo_placa": "DEF5678"
+        }
+      ]
+    },
+    {
+      "codigo_cliente": "CL002",
+      "nome": "Maria",
+      "contratos_locacao": [
+        {
+          "codigo_contrato": "CT003",
+          "data_retirada": "2024-04-10",
+          "data_devolucao": "2024-04-25",
+          "veiculo_placa": "GHI9012"
+        }
+      ]
+    }
+  ]

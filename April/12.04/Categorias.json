@@ -1,0 +1,37 @@
+
+[
+    {
+      "sigla": "A",
+      "nome": "Economico",
+      "tarifa_locacao": 50.00,
+      "veiculos": [
+        {
+          "placa": "ABC1234",
+          "marca": "Volkswagen",
+          "modelo": "Gol"
+        },
+        {
+          "placa": "DEF5678",
+          "marca": "Ford",
+          "modelo": "Ka"
+        }
+      ]
+    },
+    {
+      "sigla": "B",
+      "nome": "Intermedi‡rio",
+      "tarifa_locacao": 70.00,
+      "veiculos": [
+        {
+          "placa": "GHI9012",
+          "marca": "Chevrolet",
+          "modelo": "Onix"
+        },
+        {
+          "placa": "JKL3456",
+          "marca": "Toyota",
+          "modelo": "Corolla"
+        }
+      ]
+    }
+  ]

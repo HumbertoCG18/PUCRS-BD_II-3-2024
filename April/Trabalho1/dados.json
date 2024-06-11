@@ -1,32 +1,270 @@
 {
-    "Carro": [
-      { "Codigo": 1, "Placa": "ABC1234", "Marca": "Toyota", "Modelo": "Corolla", "Ano": 2018, "Nome_Motorista": "João da Silva" },
-      { "Codigo": 2, "Placa": "DEF5678", "Marca": "Honda", "Modelo": "Civic", "Ano": 2019, "Nome_Motorista": "Maria Oliveira" },
-      { "Codigo": 3, "Placa": "GHI9101", "Marca": "Volkswagen", "Modelo": "Gol", "Ano": 2020, "Nome_Motorista": "Pedro Santos" }
-    ],
-    "Passageiro": [
-      { "CPF": "12345678901", "Nome": "José Souza", "Email": "jose@example.com", "Telefone": 123456789, "Bairro": "Centro", "Meio_Pagamento": "Cartão de Crédito", "fk_Seguro_SeguroID": 1 },
-      { "CPF": "23456789012", "Nome": "Ana Lima", "Email": "ana@example.com", "Telefone": 234567890, "Bairro": "Barra da Tijuca", "Meio_Pagamento": "Dinheiro", "fk_Seguro_SeguroID": 2 },
-      { "CPF": "34567890123", "Nome": "Carlos Silva", "Email": "carlos@example.com", "Telefone": 345678901, "Bairro": "Copacabana", "Meio_Pagamento": "Pix", "fk_Seguro_SeguroID": 3 },
-      { "CPF": "45678901234", "Nome": "Mariana Costa", "Email": "mariana@example.com", "Telefone": 456789012, "Bairro": "Ipanema", "Meio_Pagamento": "Cartão de Débito", "fk_Seguro_SeguroID": 1 },
-      { "CPF": "56789012345", "Nome": "Fernanda Oliveira", "Email": "fernanda@example.com", "Telefone": 567890123, "Bairro": "Leblon", "Meio_Pagamento": "Boleto Bancário", "fk_Seguro_SeguroID": 2 }
-    ],
-    "Viagem": [
-      { "Id": 1, "Kms": 20.5, "Valor": 50.00, "Bairro_Partida": "Centro", "Taxa_Adicional": 5.00, "Cidade_Destino": "Barra da Tijuca", "Viagem_TIPO": 1, "fk_Carro_Codigo": 1 },
-      { "Id": 2, "Kms": 15.2, "Valor": 40.00, "Bairro_Partida": "Copacabana", "Taxa_Adicional": 3.00, "Cidade_Destino": "Ipanema", "Viagem_TIPO": 2, "fk_Carro_Codigo": 2 },
-      { "Id": 3, "Kms": 30.0, "Valor": 70.00, "Bairro_Partida": "Leblon", "Taxa_Adicional": 7.00, "Cidade_Destino": "Centro", "Viagem_TIPO": 1, "fk_Carro_Codigo": 3 },
-      { "Id": 4, "Kms": 25.7, "Valor": 60.00, "Bairro_Partida": "Barra da Tijuca", "Taxa_Adicional": 6.00, "Cidade_Destino": "Copacabana", "Viagem_TIPO": 2, "fk_Carro_Codigo": 1 },
-      { "Id": 5, "Kms": 18.3, "Valor": 45.00, "Bairro_Partida": "Ipanema", "Taxa_Adicional": 4.00, "Cidade_Destino": "Leblon", "Viagem_TIPO": 1, "fk_Carro_Codigo": 2 },
-      { "Id": 6, "Kms": 35.1, "Valor": 80.00, "Bairro_Partida": "Centro", "Taxa_Adicional": 8.00, "Cidade_Destino": "Barra da Tijuca", "Viagem_TIPO": 2, "fk_Carro_Codigo": 3 },
-      { "Id": 7, "Kms": 22.0, "Valor": 55.00, "Bairro_Partida": "Copacabana", "Taxa_Adicional": 5.00, "Cidade_Destino": "Ipanema", "Viagem_TIPO": 1, "fk_Carro_Codigo": 1 },
-      { "Id": 8, "Kms": 28.6, "Valor": 65.00, "Bairro_Partida": "Leblon", "Taxa_Adicional": 7.00, "Cidade_Destino": "Centro", "Viagem_TIPO": 2, "fk_Carro_Codigo": 2 },
-      { "Id": 9, "Kms": 19.8, "Valor": 50.00, "Bairro_Partida": "Barra da Tijuca", "Taxa_Adicional": 4.00, "Cidade_Destino": "Copacabana", "Viagem_TIPO": 1, "fk_Carro_Codigo": 3 },
-      { "Id": 10, "Kms": 16.5, "Valor": 40.00, "Bairro_Partida": "Ipanema", "Taxa_Adicional": 3.00, "Cidade_Destino": "Leblon", "Viagem_TIPO": 2, "fk_Carro_Codigo": 1 }
-    ],
-    "Seguro": [
-      { "SeguroID": 1, "Preco": 50.00, "Nome_Seguro": "Seguro Completo", "Beneficios": "Cobertura total em caso de acidente" },
-      { "SeguroID": 2, "Preco": 30.00, "Nome_Seguro": "Seguro Básico", "Beneficios": "Cobertura parcial em caso de acidente" },
-      { "SeguroID": 3, "Preco": 40.00, "Nome_Seguro": "Seguro VIP", "Beneficios": "Atendimento prioritário e assistência 24 horas" }
-    ]
-  }
-  
+  "Carros": [
+    {
+      "Codigo": 1,
+      "Placa": "ABC1234",
+      "Marca": "Toyota",
+      "Modelo": "Corolla",
+      "Ano": 2018,
+      "Nome_Motorista": "João da Silva"
+    },
+    {
+      "Codigo": 2,
+      "Placa": "DEF5678",
+      "Marca": "Honda",
+      "Modelo": "Civic",
+      "Ano": 2019,
+      "Nome_Motorista": "Maria Oliveira"
+    },
+    {
+      "Codigo": 3,
+      "Placa": "GHI9101",
+      "Marca": "Volkswagen",
+      "Modelo": "Gol",
+      "Ano": 2020,
+      "Nome_Motorista": "Pedro Santos"
+    }
+  ],
+  "Passageiros": [
+    {
+      "CPF": "12345678901",
+      "Nome": "José Souza",
+      "Email": "jose@example.com",
+      "Telefone": 123456789,
+      "Bairro": "Centro",
+      "PagamentoID": 3,
+      "Seguro": {
+        "SeguroID": 1,
+        "Preco": 50.00,
+        "Nome_Seguro": "Seguro Completo",
+        "Beneficios": "Cobertura total em caso de acidente"
+      },
+      "Viagens": [
+        {
+          "Id": 1,
+          "Kms": 20.5,
+          "Valor": 50.00,
+          "Bairro_Partida": "Centro",
+          "Taxa_Adicional": 5.00,
+          "Cidade_Destino": "Floresta",
+          "Carro": {
+            "Codigo": 1,
+            "Placa": "ABC1234",
+            "Marca": "Toyota",
+            "Modelo": "Corolla",
+            "Ano": 2018,
+            "Nome_Motorista": "João da Silva"
+          }
+        },
+        {
+          "Id": 6,
+          "Kms": 35.1,
+          "Valor": 80.00,
+          "Bairro_Partida": "Centro",
+          "Taxa_Adicional": 8.00,
+          "Cidade_Destino": "Floresta",
+          "Carro": {
+            "Codigo": 3,
+            "Placa": "GHI9101",
+            "Marca": "Volkswagen",
+            "Modelo": "Gol",
+            "Ano": 2020,
+            "Nome_Motorista": "Pedro Santos"
+          }
+        }
+      ]
+    },
+    {
+      "CPF": "23456789012",
+      "Nome": "Ana Lima",
+      "Email": "ana@example.com",
+      "Telefone": 234567890,
+      "Bairro": "Floresta",
+      "PagamentoID": 1,
+      "Seguro": {
+        "SeguroID": 2,
+        "Preco": 30.00,
+        "Nome_Seguro": "Seguro Básico",
+        "Beneficios": "Cobertura parcial em caso de acidente"
+      },
+      "Viagens": [
+        {
+          "Id": 4,
+          "Kms": 25.7,
+          "Valor": 60.00,
+          "Bairro_Partida": "Floresta",
+          "Taxa_Adicional": 6.00,
+          "Cidade_Destino": "Moinhos de Vento",
+          "Carro": {
+            "Codigo": 1,
+            "Placa": "ABC1234",
+            "Marca": "Toyota",
+            "Modelo": "Corolla",
+            "Ano": 2018,
+            "Nome_Motorista": "João da Silva"
+          }
+        },
+        {
+          "Id": 9,
+          "Kms": 19.8,
+          "Valor": 50.00,
+          "Bairro_Partida": "Floresta",
+          "Taxa_Adicional": 4.00,
+          "Cidade_Destino": "Moinhos de Vento",
+          "Carro": {
+            "Codigo": 3,
+            "Placa": "GHI9101",
+            "Marca": "Volkswagen",
+            "Modelo": "Gol",
+            "Ano": 2020,
+            "Nome_Motorista": "Pedro Santos"
+          }
+        }
+      ]
+    },
+    {
+      "CPF": "34567890123",
+      "Nome": "Carlos Silva",
+      "Email": "carlos@example.com",
+      "Telefone": 345678901,
+      "Bairro": "Moinhos de Vento",
+      "PagamentoID": 1,
+      "Seguro": {
+        "SeguroID": 3,
+        "Preco": 40.00,
+        "Nome_Seguro": "Seguro VIP",
+        "Beneficios": "Atendimento prioritário e assistência 24 horas"
+      },
+      "Viagens": [
+        {
+          "Id": 2,
+          "Kms": 15.2,
+          "Valor": 40.00,
+          "Bairro_Partida": "Moinhos de Vento",
+          "Taxa_Adicional": 3.00,
+          "Cidade_Destino": "Petrópolis",
+          "Carro": {
+            "Codigo": 2,
+            "Placa": "DEF5678",
+            "Marca": "Honda",
+            "Modelo": "Civic",
+            "Ano": 2019,
+            "Nome_Motorista": "Maria Oliveira"
+          }
+        },
+        {
+          "Id": 7,
+          "Kms": 22.0,
+          "Valor": 55.00,
+          "Bairro_Partida": "Moinhos de Vento",
+          "Taxa_Adicional": 5.00,
+          "Cidade_Destino": "Petrópolis",
+          "Carro": {
+            "Codigo": 1,
+            "Placa": "ABC1234",
+            "Marca": "Toyota",
+            "Modelo": "Corolla",
+            "Ano": 2018,
+            "Nome_Motorista": "João da Silva"
+          }
+        }
+      ]
+    },
+    {
+      "CPF": "45678901234",
+      "Nome": "Mariana Costa",
+      "Email": "mariana@example.com",
+      "Telefone": 456789012,
+      "Bairro": "Petrópolis",
+      "PagamentoID": 2,
+      "Seguro": {
+        "SeguroID": 1,
+        "Preco": 50.00,
+        "Nome_Seguro": "Seguro Completo",
+        "Beneficios": "Cobertura total em caso de acidente"
+      },
+      "Viagens": [
+        {
+          "Id": 5,
+          "Kms": 18.3,
+          "Valor": 45.00,
+          "Bairro_Partida": "Petrópolis",
+          "Taxa_Adicional": 4.00,
+          "Cidade_Destino": "Menino Deus",
+          "Carro": {
+            "Codigo": 2,
+            "Placa": "DEF5678",
+            "Marca": "Honda",
+            "Modelo": "Civic",
+            "Ano": 2019,
+            "Nome_Motorista": "Maria Oliveira"
+          }
+        },
+        {
+          "Id": 10,
+          "Kms": 16.5,
+          "Valor": 40.00,
+          "Bairro_Partida": "Petrópolis",
+          "Taxa_Adicional": 3.00,
+          "Cidade_Destino": "Menino Deus",
+          "Carro": {
+            "Codigo": 1,
+            "Placa": "ABC1234",
+            "Marca": "Toyota",
+            "Modelo": "Corolla",
+            "Ano": 2018,
+            "Nome_Motorista": "João da Silva"
+          }
+        }
+      ]
+    },
+    {
+      "CPF": "56789012345",
+      "Nome": "Fernanda Oliveira",
+      "Email": "fernanda@example.com",
+      "Telefone": 567890123,
+      "Bairro": "Menino Deus",
+      "PagamentoID": 3,
+      "Seguro": {
+        "SeguroID": 2,
+        "Preco": 30.00,
+        "Nome_Seguro": "Seguro Básico",
+        "Beneficios": "Cobertura parcial em caso de acidente"
+      },
+      "Viagens": [
+        {
+          "Id": 3,
+          "Kms": 30.0,
+          "Valor": 70.00,
+          "Bairro_Partida": "Menino Deus",
+          "Taxa_Adicional": 7.00,
+          "Cidade_Destino": "Centro",
+          "Carro": {
+            "Codigo": 3,
+            "Placa": "GHI9101",
+            "Marca": "Volkswagen",
+            "Modelo": "Gol",
+            "Ano": 2020,
+            "Nome_Motorista": "Pedro Santos"
+          }
+        },
+        {
+          "Id": 8,
+          "Kms": 28.6,
+          "Valor": 65.00,
+          "Bairro_Partida": "Menino Deus",
+          "Taxa_Adicional": 7.00,
+          "Cidade_Destino": "Centro",
+          "Carro": {
+            "Codigo": 2,
+            "Placa": "DEF5678",
+            "Marca": "Honda",
+            "Modelo": "Civic",
+            "Ano": 2019,
+            "Nome_Motorista": "Maria Oliveira"
+          }
+        }
+      ]
+    }
+  ]
+}
